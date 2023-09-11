@@ -1,0 +1,17 @@
+.label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 100px;
+    background: #213009;
+    opacity: 70%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    color:rgb(55, 177, 55);
+    font-size: 40px;
+    font-family: verdana;
+}
