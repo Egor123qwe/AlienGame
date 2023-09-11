@@ -1,0 +1,9 @@
+.Home {
+    text-align: center;
+    background-image: url("../../../assets/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
