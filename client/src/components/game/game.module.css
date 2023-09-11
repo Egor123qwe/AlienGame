@@ -1,18 +1,37 @@
-#hostBtn {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -65%);
+#input {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
 }
-  
-#clientBtn {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 65%);
+
+#submitBtn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 65%);
+}
+
+
+input[type=text] {
+  background-color: #3CBC8D;
+  color: white;
+  border-color: black;
+  border-width: 2px;
+  width: 30%;
+  height: 80px;
+  background: #232323;
+  opacity: 70%;
+  font-size: 40px;
+  font-family: verdana;
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
 }
   
 .btn{
     position: absolute;
-    width: 500px;
+    width: 30%;
     height: 80px;
     background: #232323;
     opacity: 70%;
@@ -68,5 +87,5 @@
   .btn:hover .border:after
   {
     width: calc( 500px/2 );
-    height: calc( 100px/2 )
+    height: calc( 50px/2 )
   }
