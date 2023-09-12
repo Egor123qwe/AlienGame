@@ -45,7 +45,7 @@ func createPasswordPage(url string) (string, error) {
 func PasswordPageSender(baseUrl string) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		token := mux.Vars(r)["token"]
-		page, err := createPasswordPage(baseUrl + "/confirm/" + token + "/password")
+		page, err := createPasswordPage(baseUrl + "/code/" + token + "/password")
 		if err != nil {
 			helperRespond.ErrorHelper(w, http.StatusInternalServerError, err)
 			return

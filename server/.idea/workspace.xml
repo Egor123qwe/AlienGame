@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1631fd01-111e-4662-b308-a5b3d33973cc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/internal/storage/repsInterfaces/gameState.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/client/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/client/client.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/client/client.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/client/client.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/host/host.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/host/host.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/host/host.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/host/host.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/home/start/start.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/start/start.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/main_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/main_config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/models/game.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/routes/gameInitRoutes/initRoutes.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/routes/gameInitRoutes/initRoutes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/CORS/CORS.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/CORS/CORS.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/storage/repsInterfaces/gameInit.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/repsInterfaces/gameInit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/storage/sqlStorage/repositories/gameInitRep/gameInitRep.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/sqlStorage/repositories/gameInitRep/gameInitRep.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/migrations/main/20230912142341_create_db.down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/migrations/main/20230912142341_create_db.up.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2VGh0VGPlmG30YnlR39YoNvuumR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/igortryhan/BSUIR/АиСД/AlienGame/server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/routes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build Olymp/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="server" />
+      <working_directory value="$PROJECT_DIR$" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
+      <kind value="DIRECTORY" />
+      <package value="Olymp" />
+      <directory value="$PROJECT_DIR$/cmd" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

@@ -89,3 +89,15 @@ input[type=text] {
     width: calc( 500px/2 );
     height: calc( 50px/2 )
   }
+
+  .errorMessage {
+    color: rgba(199, 24, 24, 0.635);
+    font-size: 40px;
+    font-family: verdana;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 300%);
+  }

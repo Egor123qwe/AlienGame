@@ -13,7 +13,7 @@ type AllowedOrigins struct {
 func ConfigureCORS(router *mux.Router) http.Handler {
 
 	cors := handlers.CORS(
-		handlers.AllowedOrigins([]string{"http://localhost:3000"}),
+		handlers.AllowedOrigins([]string{"*"}),
 		handlers.AllowedMethods([]string{"GET", "HEAD", "POST", "PUT", "DELETE"}),
 		handlers.AllowedHeaders([]string{"application/json", "Content-Type", "text/plain"}),
 		handlers.AllowCredentials(),

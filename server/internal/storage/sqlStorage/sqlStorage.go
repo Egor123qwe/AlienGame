@@ -2,17 +2,21 @@ package sqlStorage
 
 import (
 	"Olymp/internal/storage"
+	"Olymp/internal/storage/repsInterfaces"
+	"Olymp/internal/storage/sqlStorage/repositories/gameInitRep"
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
 )
 
 type Store struct {
-	db *sqlx.DB
+	db       *sqlx.DB
+	gameInit repsInterfaces.GameInit
 }
 
 func New(db *sqlx.DB) storage.Storage {
 	return &Store{
-		db: db,
+		db:       db,
+		gameInit: gameInitRep.New(db),
 	}
 }
 
@@ -27,3 +31,5 @@ func ConfigureStore(dbDriver string, dbURL string) (storage.Storage, error) {
 
 	return New(db), nil
 }
+
+func (s *Store) GameInit() repsInterfaces.GameInit { return s.gameInit }
