@@ -23,14 +23,14 @@ function App() {
           <Route path='/home' element={<Home/>}>
             <Route path='/home' element={<Navigate to="/home/start" />}/>
             <Route path='/home/start'  element={<Start/>}/>
-            <Route path='/home/host/:code' element={<Host/>}/>
+            <Route path='/home/host' element={<Host/>}/>
             <Route path='/home/client' element={<Client/>}/>
             <Route path='/home/result'>
               <Route path='/home/result/lose'  element={<Lose/>}/>
               <Route path='/home/result/win' element={<Win/>}/>
             </Route>
           </Route>
-          <Route path='/game' element={<Game/>}/>
+          <Route path='/game/:code' element={<Game/>}/>
       </Route>
     )
   );
