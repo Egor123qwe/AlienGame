@@ -1,15 +1,39 @@
-import { useLocation, useParams } from 'react-router-dom';
+import { Navigate, useLocation, useParams } from 'react-router-dom';
 import s from './host.module.css';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import { useEffect, useState } from 'react';
+import instance from '../../../../API/API';
+import { w3cwebsocket as WebSocket } from 'websocket';
 
 function Host() {
 
-  let params = useParams();
+  const [isFind, setFind] = useState(false);
+  const [value, setValue] = useState('');
+
+  let GameWait = (value) => {
+      const ws = new WebSocket('ws://localhost:8000/wait');
+      ws.onopen = () => ws.send(value) 
+      ws.onmessage = (event) => setFind(true)
+      return () => ws.close();
+  }
+
+  useEffect(() => {
+    instance.get('host')
+      .then(response => {
+        setValue(response.data.code)
+        GameWait(response.data.code)
+      })
+      .catch(error => {});
+  }, []);
+
+  if (isFind) {
+    return <Navigate to={"/game/" + value}/>
+  }
 
   return (
     <>
-      <CopyToClipboard text={params.code}>
-        <div id={s.hostBtn} className={s.btn}><span className={s.border}></span>code: {params.code}</div>
+      <CopyToClipboard text={value}>
+        <div id={s.hostBtn} className={s.btn}><span className={s.border}></span>code: {value}</div>
       </CopyToClipboard>
     </>
   );
