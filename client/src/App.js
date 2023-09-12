@@ -12,6 +12,7 @@ import Host from './components/home/code/host/host';
 import Client from './components/home/code/client/client';
 import Lose from './components/home/result/lose/lose';
 import Win from './components/home/result/win/win';
+import Game from './components/game/game';
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
               <Route path='/home/result/win' element={<Win/>}/>
             </Route>
           </Route>
-          <Route path='/game' />
+          <Route path='/game' element={<Game/>}/>
       </Route>
     )
   );
