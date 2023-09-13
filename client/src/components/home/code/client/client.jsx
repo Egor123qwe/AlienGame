@@ -21,7 +21,7 @@ function Client() {
   }
 
   if (isFind) {
-    return <Navigate to={"/game/" + value}/>
+    return <Navigate to={"/game/" + value + "/client"}/>
   }
 
   return (

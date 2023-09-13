@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bddadfef-28e2-42b9-977a-863697a25a85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/server/internal/generate/maze.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/internal/routes/gameInitRoutes/gameWait.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/game/game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/game/game.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home/code/client/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/code/client/client.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home/code/host/host.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/code/host/host.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/routes/gameInitRoutes/initRoutes.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/routes/gameInitRoutes/initRoutes.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2VLgbf1S14jfzPg1MdNc1ldb0Jn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/igortryhan/BSUIR/АиСД/AlienGame",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
