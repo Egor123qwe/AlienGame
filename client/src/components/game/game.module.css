@@ -1,91 +1,9 @@
-#input {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -65%);
-}
-
-#submitBtn {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 65%);
-}
-
-
-input[type=text] {
-  background-color: #3CBC8D;
-  color: white;
-  border-color: black;
-  border-width: 2px;
-  width: 30%;
-  height: 80px;
-  background: #232323;
-  opacity: 70%;
-  font-size: 40px;
-  font-family: verdana;
-  letter-spacing: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
+.Game {
   text-align: center;
+  background-image: url("../../../assets/background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
+  height: 100%;
+  width: 100%;
 }
-  
-.btn{
-    position: absolute;
-    width: 30%;
-    height: 80px;
-    background: #232323;
-    opacity: 70%;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 80px;
-    color: white;
-    font-size: 40px;
-    font-family: verdana;
-    letter-spacing: 4px;
-    cursor: pointer;
-  }
-  
-  .btn:before,
-  .btn:after,
-  .border:before,
-  .border:after
-  {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    transition: 1s;
-    mix-blend-mode: hue;
-  }
-  
-  .btn:before
-  {
-    top: -2px;
-    left: -2px
-  }
-  .btn:after
-  {
-    top: -2px;
-    right: -2px;
-  }
-  .border:before
-  {
-    bottom: -2px;
-    left: -2px
-  }
-  .border:after
-  {
-    bottom: -2px;
-    right: -2px
-  }
-  
-  .btn:hover:before,
-  .btn:hover:after,
-  .btn:hover .border:before,
-  .btn:hover .border:after
-  {
-    width: calc( 500px/2 );
-    height: calc( 50px/2 )
-  }

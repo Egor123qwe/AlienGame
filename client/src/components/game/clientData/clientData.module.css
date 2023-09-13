@@ -1,0 +1,13 @@
+.Data {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: red;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.Green {
+  color: green;
+}

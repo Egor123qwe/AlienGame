@@ -5,27 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1631fd01-111e-4662-b308-a5b3d33973cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/internal/storage/repsInterfaces/gameState.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/generate/maze.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/routes/gameInitRoutes/gameWait.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/routes/gameInitRoutes/getGames.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/game/game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/game.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/game/game.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/game.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/client/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/client/client.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/client/client.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/client/client.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/host/host.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/host/host.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/host/host.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/host/host.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/home/start/start.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/start/start.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/main_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/main_config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/models/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/models/game.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/routes/gameInitRoutes/initRoutes.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/routes/gameInitRoutes/initRoutes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/services/CORS/CORS.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/CORS/CORS.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/storage/repsInterfaces/gameInit.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/repsInterfaces/gameInit.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/storage/sqlStorage/repositories/gameInitRep/gameInitRep.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/sqlStorage/repositories/gameInitRep/gameInitRep.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/migrations/main/20230912142341_create_db.down.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/migrations/main/20230912142341_create_db.up.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,26 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/igortryhan/BSUIR/АиСД/AlienGame/server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/igortryhan/BSUIR/АиСД/AlienGame/server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/internal/routes" />

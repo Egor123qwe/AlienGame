@@ -30,7 +30,7 @@ function App() {
               <Route path='/home/result/win' element={<Win/>}/>
             </Route>
           </Route>
-          <Route path='/game/:code' element={<Game/>}/>
+          <Route path='/game/:code/:user' element={<Game/>}/>
       </Route>
     )
   );

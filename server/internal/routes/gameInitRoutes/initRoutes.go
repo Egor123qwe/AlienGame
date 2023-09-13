@@ -1,25 +1,18 @@
 package gameInitRoutes
 
 import (
+	"Olymp/internal/generate"
 	"Olymp/internal/routes/routesServices/helperRespond"
-	"database/sql"
 	"encoding/json"
-	"github.com/gorilla/websocket"
 	"net/http"
 )
-
-var upgrader = websocket.Upgrader{
-	ReadBufferSize:  1024,
-	WriteBufferSize: 1024,
-	CheckOrigin: func(r *http.Request) bool {
-		return true
-	},
-}
 
 func (i *InitRoutes) ConfigureInitRoutes() {
 	i.server.Router.HandleFunc("/host", i.CreateInitGameRoute()).Methods("GET")
 	i.server.Router.HandleFunc("/client", i.CreateConnectGameRoute()).Methods("POST")
 	i.server.Router.HandleFunc("/wait", i.CreateWaitGameSocket()).Methods("GET")
+
+	i.server.Router.HandleFunc("/map/{token}", i.GetGameRoute()).Methods("GET")
 }
 
 func (i *InitRoutes) CreateInitGameRoute() http.HandlerFunc {
@@ -54,28 +47,7 @@ func (i *InitRoutes) CreateConnectGameRoute() http.HandlerFunc {
 			helperRespond.ErrorHelper(w, http.StatusBadRequest, err)
 			return
 		}
-		//Гененрация игры
+		Games[res.Code] = generate.GetField()
 		helperRespond.Respond(w, http.StatusOK, res.Code)
-	}
-}
-
-func (i *InitRoutes) CreateWaitGameSocket() http.HandlerFunc {
-	return func(w http.ResponseWriter, r *http.Request) {
-		conn, err := upgrader.Upgrade(w, r, nil)
-		if err != nil {
-			helperRespond.ErrorHelper(w, http.StatusBadRequest, err)
-			return
-		}
-		defer conn.Close()
-
-		_, message, err := conn.ReadMessage()
-		token := string(message)
-		for {
-			_, err = i.server.Store.GameInit().Get(token)
-			if err == sql.ErrNoRows {
-				err = conn.WriteMessage(websocket.TextMessage, []byte("ready"))
-				return
-			}
-		}
 	}
 }
