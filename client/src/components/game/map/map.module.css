@@ -1,0 +1,16 @@
+.block {
+  border-radius: 10%;
+  background-image: url('../../../../assets/texture.jpeg');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lift {
+  border-radius: 1%;
+
+  background-image: url('../../../../assets/texture2.jpeg');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
