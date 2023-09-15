@@ -14,3 +14,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.Alient {
+  background-image: url('../../../../assets/alient.png');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Piople {
+  background-image: url('../../../../assets/piople.png');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

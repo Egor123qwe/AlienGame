@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import s from './map.module.css';
 import ClientData from '../clientData/clientData';
 import HostData from '../hostData/hostData';
+import TypeWarning from '../typeWarnings/typeWarnings';
 
 function Map(props) {
 
@@ -10,10 +11,19 @@ function Map(props) {
     isAlient = true
   }
 
+  let GeneralMessage = ""
+  //lift 
+  //block
+
+  const Speed = 0.15
+  const UserSize = 75
   const CubeSize = 130
 
-  const [cameraPos, setCameraPos] = useState({x: 0.0, y: 0.0})
-  const [floor, setFloor] = useState(0)
+  const [enemyPos, setEnemyPos] = useState({x: 0.0, y: 0.0})
+  const [enemyFloor, setEnemyFloor] = useState(0)
+
+  const [cameraPos, setCameraPos] = useState({x: 29.0, y: isAlient ? 1.0 : 29.0})
+  const [floor, setFloor] = useState(isAlient ? 0 : 2)
   let color = '';
 
   let lab = ''
@@ -39,8 +49,8 @@ function Map(props) {
     let top = ''
     let left = ''
 
-    left = props.map.width/4*CubeSize + cameraPos.x*-CubeSize + blocsCount % props.map.width * CubeSize + 'px'
-    top = props.map.height/8*CubeSize + cameraPos.y*CubeSize + Math.floor(blocsCount / props.map.width) * -CubeSize + 'px'
+    left = window.innerWidth/2 + cameraPos.x*-CubeSize + blocsCount % props.map.width * CubeSize + 'px'
+    top = window.innerHeight/2 + cameraPos.y*CubeSize + Math.floor(blocsCount / props.map.width) * -CubeSize + 'px'
 
     blocsCount++
 
@@ -56,7 +66,7 @@ function Map(props) {
     return (
       <div
         className={st}
-        key={cube}
+        key={blocsCount}
         style={{
           backgroundColor: color,
           position: 'fixed',
@@ -71,10 +81,71 @@ function Map(props) {
   })
 
 
+  const User = (isAlient, Pos, root) => {  
+    console.log(Pos)
+    let left
+    let top
+    if (isAlient != root) {
+      left = window.innerWidth/2 - cameraPos.x*CubeSize + CubeSize/2-UserSize/2  + 'px'
+      top = window.innerHeight/2 + cameraPos.y*CubeSize + CubeSize/2-UserSize/2 + 'px'
+    } else {
+      left = window.innerWidth/2 + CubeSize/2-UserSize/2  + 'px'
+      top = window.innerHeight/2 + CubeSize/2-UserSize/2 + 'px'
+    }
+
+
+    
+    return (
+      <div
+        className={isAlient ? s.Alient : s.Piople}
+        style={{
+          position: 'fixed',
+          left: left,
+          top: top,
+          zIndex: 100,
+          width: UserSize + 'px',
+          height: UserSize + 'px'
+        }}
+      >
+      </div>
+    )
+  }
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      switch (event.key) {
+        case 'ArrowDown':
+          setCameraPos({x: cameraPos.x, y: (cameraPos.y - Speed)})
+          break
+        case 'ArrowUp':
+          setCameraPos({x: cameraPos.x, y: (cameraPos.y + Speed)})
+          break
+        case 'ArrowLeft':
+          setCameraPos({x: cameraPos.x - Speed, y: (cameraPos.y)})
+          break
+        case 'ArrowRight':
+          setCameraPos({x: cameraPos.x + Speed, y: (cameraPos.y)})
+          break
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  
+  }, [cameraPos]);
+
+
   return (
     <>
+      {User(isAlient, cameraPos, isAlient)}
+      {enemyFloor === floor ? User(!isAlient, enemyPos, isAlient) : null}
       {blocks}
-      {isAlient ? <HostData /> : <ClientData />}
+      {isAlient ? <HostData ifloor={floor} floor={enemyFloor}/> 
+                : <ClientData ifloor={floor} floor={enemyFloor}/>}
+
+      <TypeWarning message={GeneralMessage} />
     </>
   );
 }
