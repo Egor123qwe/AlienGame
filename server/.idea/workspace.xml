@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1631fd01-111e-4662-b308-a5b3d33973cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/internal/generate/maze.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/routes/gameInitRoutes/gameWait.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/routes/gameInitRoutes/getGames.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/game/game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/game.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/game/game.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/game.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/client/client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/client/client.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/host/host.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/host/host.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/game/map/map.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/map/map.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/game/map/map.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/map/map.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/routes/gameInitRoutes/initRoutes.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/routes/gameInitRoutes/initRoutes.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

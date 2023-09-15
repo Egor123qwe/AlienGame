@@ -1,15 +1,9 @@
 import s from './typeWarnings.module.css';
 
 function TypeWarning(props) {
-
-  let message = ""
-  if (props.message == "") {
-    message = ""
-  }
-
   return (
     <div className = {s.Data}>
-      {message}
+      {props.message}
     </div>
   );
 }
