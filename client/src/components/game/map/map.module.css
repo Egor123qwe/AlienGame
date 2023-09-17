@@ -6,6 +6,14 @@
   background-size: cover;
 }
 
+.Elix {
+  border-radius: 10%;
+  background-image: url('../../../../assets/elix.png');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .lift {
   border-radius: 1%;
 

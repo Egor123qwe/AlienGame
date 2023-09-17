@@ -13,6 +13,7 @@ func (i *InitRoutes) ConfigureInitRoutes() {
 	i.server.Router.HandleFunc("/wait", i.CreateWaitGameSocket()).Methods("GET")
 
 	i.server.Router.HandleFunc("/map/{token}", i.GetGameRoute()).Methods("GET")
+	i.server.Router.HandleFunc("/game", i.CreateGameSocket()).Methods("GET")
 }
 
 func (i *InitRoutes) CreateInitGameRoute() http.HandlerFunc {
@@ -48,6 +49,15 @@ func (i *InitRoutes) CreateConnectGameRoute() http.HandlerFunc {
 			return
 		}
 		Games[res.Code] = generate.GetField()
+		GemesSoket[res.Code] = &GameData{
+			APosx:  29.0,
+			APosy:  1.0,
+			AFloor: 0,
+			PPosx:  29.0,
+			PPosy:  29.0,
+			PFloor: 0,
+			WhoWin: 0,
+		}
 		helperRespond.Respond(w, http.StatusOK, res.Code)
 	}
 }

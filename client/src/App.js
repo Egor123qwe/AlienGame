@@ -15,7 +15,6 @@ import Win from './components/home/result/win/win';
 import Game from './components/game/game';
 
 function App() {
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<Root />}>
