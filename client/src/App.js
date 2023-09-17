@@ -17,19 +17,19 @@ import Game from './components/game/game';
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<Root />}>
-          <Route path='/' element={<Navigate to="/home/start" />}/>
-          <Route path='/home' element={<Home/>}>
-            <Route path='/home' element={<Navigate to="/home/start" />}/>
-            <Route path='/home/start'  element={<Start/>}/>
-            <Route path='/home/host' element={<Host/>}/>
-            <Route path='/home/client' element={<Client/>}/>
-            <Route path='/home/result'>
-              <Route path='/home/result/lose'  element={<Lose/>}/>
-              <Route path='/home/result/win' element={<Win/>}/>
+      <Route path='/AlienGame' element={<Root />}>
+          <Route path='' element={<Navigate to="home" />}/>
+          <Route path='home' element={<Home/>}>
+            <Route path='' element={<Navigate to="start" />}/>
+            <Route path='start'  element={<Start/>}/>
+            <Route path='host' element={<Host/>}/>
+            <Route path='client' element={<Client/>}/>
+            <Route path='result'>
+              <Route path='lose'  element={<Lose/>}/>
+              <Route path='win' element={<Win/>}/>
             </Route>
           </Route>
-          <Route path='/game/:code/:user' element={<Game/>}/>
+          <Route path='game/:code/:user' element={<Game/>}/>
       </Route>
     )
   );
