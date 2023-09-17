@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1631fd01-111e-4662-b308-a5b3d33973cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/assets/background.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../client/assets/background.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/API/API.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/game/clientData/clientData.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/clientData/clientData.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/game/hostData/hostData.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/hostData/hostData.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/game/map/map.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/map/map.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/game/typeWarnings/typeWarnings.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/game/typeWarnings/typeWarnings.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/host/host.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/host/host.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/home/code/host/host.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/home/code/host/host.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/generate/maze.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/generate/maze.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/routes/gameInitRoutes/GameRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/routes/gameInitRoutes/GameRouter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/server/serverApi/apiServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/server/serverApi/apiServer.go" afterDir="false" />
-    </list>
+    <list default="true" id="1631fd01-111e-4662-b308-a5b3d33973cc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
