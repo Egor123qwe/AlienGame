@@ -3,7 +3,7 @@ import instance from '../../../../API/API';
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 
-function Client() {
+function Client(props) {
 
   const [value, setMyValue] = useState('');
   const [error, setError] = useState(false);

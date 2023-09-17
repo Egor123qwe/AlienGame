@@ -4,7 +4,6 @@ import s from './start.module.css';
 function Start() {
 
   return (
-
     <>
       <NavLink to="/home/host">
         <div onClick={null} id={s.hostBtn} className={s.btn}>

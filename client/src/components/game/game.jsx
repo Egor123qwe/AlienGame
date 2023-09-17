@@ -25,11 +25,10 @@ function Game() {
       })
       .catch(error => {});
   }, []);
-  //2. устанавливаем сокет связь
 
   return (
     <div className = {s.Game}>
-      <Map map={map} user={params.user}/>
+      <Map map={map} user={params.user} code={params.code}/>
       <TypeWarning />
     </div>
   );
