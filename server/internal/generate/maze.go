@@ -125,7 +125,7 @@ func generateMaze() [][]int {
 	maze[0][1] = 2
 	maze[1][1] = 2
 	maze[Height-1][0] = 2
-	maze[Height-1][1] = 23
+	maze[Height-1][1] = 2
 	maze[Height-2][0] = 2
 	maze[Height-2][1] = 2
 	maze[Height-1][Width-1] = 2

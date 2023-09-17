@@ -2,7 +2,7 @@ import { Navigate, useLocation, useParams } from 'react-router-dom';
 import s from './host.module.css';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { useEffect, useState } from 'react';
-import instance from '../../../../API/API';
+import instance, { baseURL } from '../../../../API/API';
 import { w3cwebsocket as WebSocket } from 'websocket';
 
 function Host() {
@@ -11,7 +11,7 @@ function Host() {
   const [value, setValue] = useState('');
 
   let GameWait = (value) => {
-      const ws = new WebSocket('ws://localhost:8000/wait');
+      const ws = new WebSocket('ws://' + baseURL + 'wait');
       ws.onopen = () => ws.send(value) 
       ws.onmessage = (event) => setFind(true)
       return () => ws.close();
