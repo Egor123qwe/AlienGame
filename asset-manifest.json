@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AlienGame/static/css/main.05282cd7.css",
-    "main.js": "/AlienGame/static/js/main.2702f1de.js",
+    "main.js": "/AlienGame/static/js/main.b28824a8.js",
     "static/js/787.c4e7f8f9.chunk.js": "/AlienGame/static/js/787.c4e7f8f9.chunk.js",
     "static/media/elix.png": "/AlienGame/static/media/elix.f550398708ef7158724a.png",
     "static/media/alient.png": "/AlienGame/static/media/alient.459a677c48ce36b18d79.png",
@@ -11,11 +11,11 @@
     "static/media/background.gif": "/AlienGame/static/media/background.54cd35a4399fd0ab983e.gif",
     "index.html": "/AlienGame/index.html",
     "main.05282cd7.css.map": "/AlienGame/static/css/main.05282cd7.css.map",
-    "main.2702f1de.js.map": "/AlienGame/static/js/main.2702f1de.js.map",
+    "main.b28824a8.js.map": "/AlienGame/static/js/main.b28824a8.js.map",
     "787.c4e7f8f9.chunk.js.map": "/AlienGame/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05282cd7.css",
-    "static/js/main.2702f1de.js"
+    "static/js/main.b28824a8.js"
   ]
 }
