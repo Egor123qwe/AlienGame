@@ -17,5 +17,5 @@ func Start(config *config) error {
 	s := server.NewServer(storage)
 	routes.ConfigureRotes(s)
 
-	return http.ListenAndServe(config.serverPort, CORS.ConfigureCORS(s.Router))
+	return http.ListenAndServe("192.168.0.101"+config.serverPort, CORS.ConfigureCORS(s.Router))
 }

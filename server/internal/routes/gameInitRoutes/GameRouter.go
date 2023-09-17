@@ -65,12 +65,17 @@ func (i *InitRoutes) CreateGameSocket() http.HandlerFunc {
 				return
 			}
 			err = conn.WriteMessage(websocket.TextMessage, data) //game
+			if err != nil {
+				helperRespond.ErrorHelper(w, http.StatusBadRequest, err)
+				return
+			}
 
 			_, message, _ := conn.ReadMessage()
 			msg := &Message{}
 			err = json.Unmarshal(message, &msg)
 			if err != nil {
 				helperRespond.ErrorHelper(w, http.StatusBadRequest, err)
+				return
 			}
 			mutex.Lock()
 			game = GemesSoket[token]

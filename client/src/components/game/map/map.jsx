@@ -4,12 +4,13 @@ import ClientData from '../clientData/clientData';
 import HostData from '../hostData/hostData';
 import TypeWarning from '../typeWarnings/typeWarnings';
 import { Navigate } from 'react-router-dom';
+import { baseURL } from '../../../API/API';
 
 function Map(props) {
 
-  const LiftMessage = "Нажмите 1 для подъёма, 2 для спуска на лифте"
-  const BlockMessage = "Нажмите пробел для захвата человека"
-  const DetailMessage = "Нажмите пробел для захвата элексира"
+  const LiftMessage = "Press 1 to go up, 2 to go down the elevator"
+  const BlockMessage = "Press Space to Capture Person"
+  const DetailMessage = "Press spacebar to grab elixir"
 
   let isAlient = false
   if (props.user == 'host') {
@@ -22,8 +23,8 @@ function Map(props) {
   const [GeneralMessage, setGeneralMessage] = useState("")
 
   const Speed = 0.25
-  const UserSize = 40
-  const CubeSize = 40
+  const UserSize = 30
+  const CubeSize = 30
 
   const [detailPos, setDetailPos] = useState({x: 1.3, y: 0.6})
   const [detailFloor, setDetailFloor] = useState(1)
@@ -46,8 +47,7 @@ function Map(props) {
   let st
   let blocsCount = 0
 
-  ///////////////////
-  const blocks = lab.split("").map((cube) => {
+  const blocks = props.map.map.split("").slice(floor*31*31, floor*31*31 + 31*31).map((cube) => {
     st = s.block
 
     if (floor == 0) {
@@ -249,7 +249,7 @@ function Map(props) {
   }, [cameraPos, floor]);
 
   useEffect(() => {
-    const ws = new WebSocket('ws://localhost:8000/game');
+    const ws = new WebSocket('ws://'+ baseURL +'game');
     ws.onopen = () => ws.send(props.code) 
     SetWs(ws)
     return () => ws.close();

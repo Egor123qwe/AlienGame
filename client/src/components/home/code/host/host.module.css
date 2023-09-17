@@ -12,7 +12,7 @@
   
 .btn{
     position: absolute;
-    width: 45%;
+    width: 600px;
     height: 100px;
     background: #232323;
     opacity: 70%;
@@ -68,6 +68,6 @@
   .btn:hover .border:before,
   .btn:hover .border:after
   {
-    width: calc( 350px/2 );
-    height: calc( 50px/2 )
+    width: calc( 600px/2 );
+    height: calc( 100px/2 )
   }
