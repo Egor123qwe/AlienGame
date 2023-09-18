@@ -27,7 +27,7 @@ function Host() {
   }, []);
 
   if (isFind) {
-    return <Navigate to={"AlienGame/game/" + value + "/host"}/>
+    return <Navigate to={"/game/" + value + "/host"}/>
   }
 
   return (
