@@ -21,7 +21,7 @@ function Client(props) {
   }
 
   if (isFind) {
-    return <Navigate to={"AlienGame/game/" + value + "/client"}/>
+    return <Navigate to={"/game/" + value + "/client"}/>
   }
 
   return (

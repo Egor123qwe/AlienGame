@@ -281,16 +281,16 @@ function Map(props) {
 
   if (whoWin == 1) {
       if (isAlient) {
-        return <Navigate to={"/AlienGame/home/result/win"}/>
+        return <Navigate to={"/home/win"}/>
       } else {
-        return <Navigate to={"/AlienGame/home/result/lose"}/>
+        return <Navigate to={"/home/lose"}/>
       }
   } 
   if (whoWin == 2) {
     if (isAlient) {
-      return <Navigate to={"/AlienGame/home/result/lose"}/>
+      return <Navigate to={"/home/lose"}/>
     } else {
-      return <Navigate to={"/AlienGame/home/result/win"}/>
+      return <Navigate to={"/home/win"}/>
     }
   } 
 

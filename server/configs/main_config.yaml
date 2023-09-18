@@ -1,4 +1,4 @@
-server_url: "http://localhost:8000"
+server_url: "http://0.0.0.0:8000"
 server_port: ":8000"
 
 db_url: "host=localhost dbname=game sslmode=disable"
